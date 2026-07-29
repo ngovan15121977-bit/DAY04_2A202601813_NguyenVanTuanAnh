@@ -1,0 +1,204 @@
+{
+  "transcript_id": "v3_openrouter_20260729T104650958097",
+  "version": "v3",
+  "artifact_version": "v3+peb1c8179815b+t6cdb53d5d7b8",
+  "prompt_hash": "eb1c8179815bd79d34de7d326420bb99b3072e6e8ae96464c02d4411f905fc68",
+  "tools_hash": "6cdb53d5d7b8de80d60b298b1357f462cedbedfae261d5ba60b08ccc401687c5",
+  "provider": "openrouter",
+  "model": "openai/gpt-4o-mini",
+  "system_prompt": "D:\\AITHUCCHIEN\\LABS\\DAY04\\DAY04_2A202601813_NguyenVanTuanAnh\\starter_v0\\artifacts\\system_prompt.md",
+  "tools": "D:\\AITHUCCHIEN\\LABS\\DAY04\\DAY04_2A202601813_NguyenVanTuanAnh\\starter_v0\\artifacts\\tools.yaml",
+  "history_window": 5,
+  "max_tool_rounds": 4,
+  "created_at": "2026-07-29T10:46:50",
+  "updated_at": "2026-07-29T10:48:08",
+  "turns": [
+    {
+      "turn_index": 1,
+      "started_at": "2026-07-29T10:46:54",
+      "user": "hi",
+      "status": "answered",
+      "assistant_text": "Hello! How can I assist you today?",
+      "rounds": [
+        {
+          "round": 1,
+          "assistant_text": "Hello! How can I assist you today?",
+          "tool_calls": [],
+          "tool_results": []
+        }
+      ],
+      "tool_events": [],
+      "ended_at": "2026-07-29T10:47:02"
+    },
+    {
+      "turn_index": 2,
+      "started_at": "2026-07-29T10:47:07",
+      "user": "bye",
+      "status": "answered",
+      "assistant_text": "Goodbye! If you need anything in the future, feel free to reach out.",
+      "rounds": [
+        {
+          "round": 1,
+          "assistant_text": "Goodbye! If you need anything in the future, feel free to reach out.",
+          "tool_calls": [],
+          "tool_results": []
+        }
+      ],
+      "tool_events": [],
+      "ended_at": "2026-07-29T10:47:08"
+    },
+    {
+      "turn_index": 3,
+      "started_at": "2026-07-29T10:47:11",
+      "user": "ok",
+      "status": "answered",
+      "assistant_text": "Great! If you have any requests or need assistance, just let me know.",
+      "rounds": [
+        {
+          "round": 1,
+          "assistant_text": "Great! If you have any requests or need assistance, just let me know.",
+          "tool_calls": [],
+          "tool_results": []
+        }
+      ],
+      "tool_events": [],
+      "ended_at": "2026-07-29T10:47:13"
+    },
+    {
+      "turn_index": 4,
+      "started_at": "2026-07-29T10:47:50",
+      "user": "Thu do Viet nam",
+      "status": "answered",
+      "assistant_text": "Thủ đô của Việt Nam hiện nay là thành phố Hà Nội. Đây là trung tâm chính trị của chính thể nhà nước trong lịch sử Việt Nam, cùng với các kinh đô khác như Phong Châu, Hoa Lư và Huế. Hà Nội không chỉ là thủ đô mà còn là một trong những vùng kinh đô quan trọng của Việt Nam, nơi diễn ra nhiều sự kiện văn hóa và lịch sử.\n\nBạn có thể tìm hiểu thêm chi tiết tại bài viết trên Wikipedia: [Thủ đô Việt Nam – Wikipedia tiếng Việt](https://vi.wikipedia.org/wiki/Thủ_đô_Việt_Nam).",
+      "rounds": [
+        {
+          "round": 1,
+          "assistant_text": null,
+          "tool_calls": [
+            {
+              "name": "lookup",
+              "args": {
+                "query": "Thủ đô Việt Nam",
+                "topic": "general",
+                "max_results": 5
+              }
+            }
+          ],
+          "tool_results": [
+            {
+              "tool": "lookup",
+              "args": {
+                "query": "Thủ đô Việt Nam",
+                "topic": "general",
+                "max_results": 5
+              },
+              "result": {
+                "tool": "web_search",
+                "query": "Thủ đô Việt Nam",
+                "topic": "general",
+                "timeframe": "week",
+                "items": [
+                  {
+                    "title": "Thủ đô Việt Nam – Wikipedia tiếng Việt",
+                    "url": "https://vi.wikipedia.org/wiki/Thủ_đô_Việt_Nam",
+                    "source": "vi.wikipedia.org",
+                    "summary": "Thủ đô Việt Nam hiện nay là thành phố Hà Nội. Sau đy là danh sách các kinh đô/thủ đô – hiểu theo nghĩa rộng – là các trung tm chính trị của chính thể nhà nước trong lịch sử Việt Nam, và cả của các vương quốc cổ/cựu quốc gia từng tồn tại trên lãnh thổ Việt Nam ngày nay.\n\n## Kinh đô và Thủ đô của Việt Nam qua các thời kỳ\n\n[sửa | sửa mã nguồn] [...] Cố đô là cách gọi tôn vinh những nơi từng là thủ đô chính thống trong lịch sử Việt Nam. Hiện ở Việt Nam có các nơi sau được gọi là cố đô gồm: đất tổ Phong Chu \"Phong Chu (kinh đô)\"), cố đô Hoa Lư \"Hoa Lư (thành phố)\"), cố đô Huế; với sự nhìn nhận và đánh giá lại về vương triều nhà Hồ, Thanh Hóa cũng được xem là một cố đô của Việt Nam. Cố đô Hoa Lư \"Hoa Lư (thành phố)\") và cố đô Huế là 2 tên gọi thông dụng, thường thấy nhất. [...] Hiện nay Việt Nam có 5 tỉnh, thành được gọi là các \"vùng kinh đô\" gồm: Hà Nội, Phú Thọ, Ninh Bình, Thanh Hóa và Thừa Thiên – Huế. 5 vùng kinh đô này được ngành văn hóa cho phép tổ chức và tham gia nhiều sự kiện lớn như: cuộc thi người đẹp các vùng kinh đô, hiệp hội văn học nghệ thuật các vùng kinh đô, triển lãm ảnh ngũ đại cố đô của Việt Nam, Hành trình di sản thế giới... Năm du lịch Quốc gia 2015 diễn ra ở Thanh Hóa và các tỉnh, thành phố có Kinh đô cổ và di sản văn hoá thế giới có chuyên đề",
+                    "score": 0.9404462
+                  },
+                  {
+                    "title": "Thủ đô Việt Nam – Wikipedia tiếng Việt",
+                    "url": "https://vi.wikipedia.org/wiki/Th%E1%BB%A7_%C4%91%C3%B4_Vi%E1%BB%87t_Nam",
+                    "source": "vi.wikipedia.org",
+                    "summary": "Wikipedia\nBách khoa toàn thư mở\n\n## Nội dung\n\n# Thủ đô Việt Nam\n\nThủ đô Việt Nam hiện nay là thành phố Hà Nội. Sau đây là danh sách các kinh đô/thủ đô – hiểu theo nghĩa rộng – là các trung tâm chính trị của chính thể nhà nước trong lịch sử Việt Nam, và cả của các vương quốc cổ/cựu quốc gia từng tồn tại trên lãnh thổ Việt Nam ngày nay.\n\n## Kinh đô và Thủ đô của Việt Nam qua các thời kỳ [...] Cố đô là cách gọi tôn vinh những nơi từng là thủ đô chính thống trong lịch sử Việt Nam. Hiện ở Việt Nam có các nơi sau được gọi là cố đô gồm: đất tổ Phong Châu \"Phong Châu (kinh đô)\"), cố đô Hoa Lư \"Hoa Lư (thành phố)\"), cố đô Huế; với sự nhìn nhận và đánh giá lại về vương triều nhà Hồ, Thanh Hóa cũng được xem là một cố đô của Việt Nam. Cố đô Hoa Lư \"Hoa Lư (thành phố)\") và cố đô Huế là 2 tên gọi thông dụng, thường thấy nhất. [...] Hiện nay Việt Nam có 5 tỉnh, thành được gọi là các \"vùng kinh đô\" gồm: Hà Nội, Phú Thọ, Ninh Bình, Thanh Hóa và Thừa Thiên – Huế. 5 vùng kinh đô này được ngành văn hóa cho phép tổ chức và tham gia nhiều sự kiện lớn như: cuộc thi người đẹp các vùng kinh đô, hiệp hội văn học nghệ thuật các vùng kinh đô, triển lãm ảnh ngũ đại cố đô của Việt Nam, Hành trình di sản thế giới... Năm du lịch Quốc gia 2015 diễn ra ở Thanh Hóa và các tỉnh, thành phố có Kinh đô cổ và di sản văn hoá thế giới có chuyên đề",
+                    "score": 0.9348309
+                  },
+                  {
+                    "title": "Danh nhân lịch sử Việt Nam Trần Thủ Độ",
+                    "url": "https://nguoinoitieng.tv/nghe-nghiep/danh-nhan-lich-su-viet-nam/tran-thu-do/baia",
+                    "source": "nguoinoitieng.tv",
+                    "summary": "# Danh nhn lịch sử Việt Nam Trần Thủ Độ. Người nổi tiếng> Danh nhn lịch sử Việt Nam> Trần Thủ Độ. * Tiểu sử Danh nhn lịch sử Việt Nam Trần Thủ Độ. * Ghi chú về Danh nhn lịch sử Việt Nam Trần Thủ Độ. ## Tiểu sử Danh nhn lịch sử Việt Nam Trần Thủ Độ. **Danh nhn lịch sử Việt Nam Trần Thủ Độ là ai?**. Trần Thủ Độ là là có công lớn trong việc sáng lập nên triều đại nhà Trần, được vua Trần phong làm Quốc thượng phụ rồi Thái sư. Việc đó khiến Trần Liễu thù hận cất qun nổi loạn và Trần Thái Tông toan bỏ đi tu, Nhưng trước sức ép cứng rắn của Trần Thủ Độ, Thái Tông đành quay trở lại ngôi vua, còn Trần Liễu sau khi thất bại cũng phải hàng phục và được phong làm An Sinh vương ở Kinh Môn. **Bạn gái/ vợ/ người yêu Danh nhn lịch sử Việt Nam Trần Thủ Độ là ai?**. ## Chiều cao cn nặng Danh nhn lịch sử Việt Nam Trần Thủ Độ. **Danh nhn lịch sử Việt Nam Trần Thủ Độ cao bao nhiêu, nặng bao nhiêu?**. **Danh nhn lịch sử Việt Nam Trần Thủ Độ sinh năm bao nhiêu, bao nhiêu tuổi?**. **Danh nhn lịch sử Việt Nam Trần Thủ Độ sinh ở đu, con giáp/ cung hoàng đạo gì?**. Trần Thủ Độ sinh ra tại Tỉnh Thái Bình, nước Việt Nam. Ông sinh thuộc cung (chưa rõ), cầm tinh con (giáp) hổ (Giáp Dần 1194). Trần Thủ Độ xếp hạng nổi tiếng thứ 92153 trên thế giới và thứ 49 trong danh sách Danh nhn lịch sử Việt Nam nổi tiếng. ## Ghi chú về Danh nhn lịch sử Việt Nam Trần Thủ Độ. Các thông tin về Danh nhn lịch sử Việt Nam Trần Thủ Độ có thể chưa đủ hoặc chưa chính xác và chỉ mang tính tham khảo, nếu bạn thấy thông tin là chưa chính xác, vui lòng liên hệ với chúng tôi qua email: @gmail.com. ### Danh nhn lịch sử Việt Nam nổi tiếng ### Sinh năm 1194 ### Sinh tuổi Dần ### Sinh tuổi Giáp Dần ### Cung Song Ngư.",
+                    "score": 0.27285978
+                  },
+                  {
+                    "title": "Thủ tướng Ấn Độ Narendra Modi thăm Việt Nam",
+                    "url": "https://baochinhphu.vn/thu-tuong-an-do-narendra-modi-tham-viet-nam-102208305.htm",
+                    "source": "baochinhphu.vn",
+                    "summary": "Title: Thủ tướng Ấn Độ Narendra Modi thăm Việt Nam\nchính phủ nước cộng hòa xã hội chủ nghĩa việt nam. ## (Chinhphu.vn) - Nhận lời mời của Thủ tướng Chính phủ Nguyễn Xun Phúc, Thủ tướng nước Cộng hòa Ấn Độ Narendra Modi sẽ thăm chính thức Việt Nam từ ngày 2 đến ngày 3/9/2016. | Thủ tướng nước Cộng hòa Ấn Độ Narendra Modi sẽ thăm chính thức Việt Nam từ ngày 2 đến ngày 3/9/2016. Tại buổi họp báo do Đại sứ quán Ấn Độ tại Việt Nam tổ chức ngày 30/8, Đại sứ đặc mệnh toàn quyền nước Cộng hòa Ấn Độ tại Việt Nam Parvathaneni Harish cho biết, đy là chuyến thăm chính thức song phương đầu tiên của Thủ tướng Ấn Độ tới Việt Nam trong 15 năm qua. Trong khuôn khổ chuyến thăm, Thủ tướng Narendra Modi sẽ tọa đàm với Thủ tướng Nguyễn Xun Phúc và chào xã giao Tổng Bí thư Nguyễn Phú Trọng, Chủ tịch Quốc hội Nguyễn Thị Kim Ngn. Thủ tướng Narendra Modi cũng sẽ tới thăm chùa Quán Sứ theo lời mời của Giáo hội Phật giáo Việt Nam. Cũng theo Đại sứ Parvathaneni Harish, phía Ấn Độ hy vọng trong chuyến thăm này sẽ có nhiều thỏa thuận hợp tác song phương được ký kết với Việt Nam trên nhiều lĩnh vực truyền thống của hai nước như: Khoa học công nghệ, công nghệ thông tin, kinh tế, văn hóa, quốc phòng, an ninh. Trong thời gian gần đy, mối quan hệ  Đối tác chiến lược Việt Nam-Ấn Độ đã có những bước phát triển mạnh mẽ trong các lĩnh vực từ chính trị đến kinh tế, quốc phòng-an ninh, khoa học, kỹ thuật, văn hóa, du lịch và giao lưu nhn dn. Lãnh đạo hai nước cũng tái khẳng định cam kết phát triển toàn diện mối quan hệ Đối tác chiến lược này; cho rằng quan hệ đối tác mạnh mẽ giữa Ấn Độ và Việt Nam sẽ mang lại hòa bình, thịnh vượng và ổn định cho nhn dn hai nước cũng như trong khu vực. © BÁO ĐIỆN TỬ CỦA CHÍNH PHỦ NƯỚC CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM.",
+                    "score": 0.11815108
+                  },
+                  {
+                    "title": "Thủ Công Mỹ Nghệ | Đồ Thủ Công Mỹ Nghệ TMH Việt Nam - Công Ty TNHH TMH Việt Nam",
+                    "url": "https://www.nhungtrangvang.com/cty/1187992947/thu-cong-my-nghe-do-thu-cong-my-nghe-tmh-viet-nam-cong-ty-tnhh-tmh-viet-nam-ypclss-121610.html",
+                    "source": "nhungtrangvang.com",
+                    "summary": "Title: Thủ Công Mỹ Nghệ | Đồ Thủ Công Mỹ Nghệ TMH Việt Nam - Công Ty TNHH TMH Việt Nam\n# Đồ Thủ Công Mỹ Nghệ TMH Việt Nam - Công Ty TNHH TMH Việt Nam. Những Trang Vàng - Nhà Tài Trợ NHÀ TÀI TRỢ  Được xác minh. Những Trang Vàng - Đồ Thủ Công Mỹ Nghệ TMH Việt Nam - Công Ty TNHH TMH Việt Nam. Những Trang Vàng - Nhà Tài Trợ NHÀ TÀI TRỢ  Được xác minh. Nhà sản xuất, Gia công OEM/ODM. Giỏ đựng đồ giặt lục bình. Sọt my tròn đựng quần áo bẩn - Đồ Thủ Công Mỹ Nghệ TMH Việt Nam - Công Ty TNHH TMH Việt Nam. Sọt my tròn đựng quần áo bẩn. Hộp đựng giấy ăn bằng tre - Đồ Thủ Công Mỹ Nghệ TMH Việt Nam - Công Ty TNHH TMH Việt Nam. Hộp đựng giấy ăn bằng tre. Tấm cói trang trí tường - Đồ Thủ Công Mỹ Nghệ TMH Việt Nam - Công Ty TNHH TMH Việt Nam. Tấm cói trang trí tường. Giỏ cói đựng cy cảnh - Đồ Thủ Công Mỹ Nghệ TMH Việt Nam - Công Ty TNHH TMH Việt Nam. Giỏ cói đựng cy cảnh. Giỏ lục bình - Đồ Thủ Công Mỹ Nghệ TMH Việt Nam - Công Ty TNHH TMH Việt Nam. Khay lục bình oval - Đồ Thủ Công Mỹ Nghệ TMH Việt Nam - Công Ty TNHH TMH Việt Nam. Sản phẩm móc & dệt kim. Khay trang trí lục bình - Đồ Thủ Công Mỹ Nghệ TMH Việt Nam - Công Ty TNHH TMH Việt Nam Giỏ móc sợi PP vuông màu xanh - Đồ Thủ Công Mỹ Nghệ TMH Việt Nam - Công Ty TNHH TMH Việt Nam. Giỏ móc sợi PP vuông màu xanh. Thảm xơ dừa trang trí - Đồ Thủ Công Mỹ Nghệ TMH Việt Nam - Công Ty TNHH TMH Việt Nam. Thảm xơ dừa trang trí. Thảm xơ dừa trang trí - Đồ Thủ Công Mỹ Nghệ TMH Việt Nam - Công Ty TNHH TMH Việt Nam. Thảm xơ dừa trang trí. Thảm xơ dừa trang trí - Đồ Thủ Công Mỹ Nghệ TMH Việt Nam - Công Ty TNHH TMH Việt Nam. Thảm xơ dừa trang trí.",
+                    "score": 0.05758342
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "round": 2,
+          "assistant_text": "Thủ đô của Việt Nam hiện nay là thành phố Hà Nội. Đây là trung tâm chính trị của chính thể nhà nước trong lịch sử Việt Nam, cùng với các kinh đô khác như Phong Châu, Hoa Lư và Huế. Hà Nội không chỉ là thủ đô mà còn là một trong những vùng kinh đô quan trọng của Việt Nam, nơi diễn ra nhiều sự kiện văn hóa và lịch sử.\n\nBạn có thể tìm hiểu thêm chi tiết tại bài viết trên Wikipedia: [Thủ đô Việt Nam – Wikipedia tiếng Việt](https://vi.wikipedia.org/wiki/Thủ_đô_Việt_Nam).",
+          "tool_calls": [],
+          "tool_results": []
+        }
+      ],
+      "tool_events": [
+        {
+          "tool": "lookup",
+          "args": {
+            "query": "Thủ đô Việt Nam",
+            "topic": "general",
+            "max_results": 5
+          },
+          "result": {
+            "tool": "web_search",
+            "query": "Thủ đô Việt Nam",
+            "topic": "general",
+            "timeframe": "week",
+            "items": [
+              {
+                "title": "Thủ đô Việt Nam – Wikipedia tiếng Việt",
+                "url": "https://vi.wikipedia.org/wiki/Thủ_đô_Việt_Nam",
+                "source": "vi.wikipedia.org",
+                "summary": "Thủ đô Việt Nam hiện nay là thành phố Hà Nội. Sau đy là danh sách các kinh đô/thủ đô – hiểu theo nghĩa rộng – là các trung tm chính trị của chính thể nhà nước trong lịch sử Việt Nam, và cả của các vương quốc cổ/cựu quốc gia từng tồn tại trên lãnh thổ Việt Nam ngày nay.\n\n## Kinh đô và Thủ đô của Việt Nam qua các thời kỳ\n\n[sửa | sửa mã nguồn] [...] Cố đô là cách gọi tôn vinh những nơi từng là thủ đô chính thống trong lịch sử Việt Nam. Hiện ở Việt Nam có các nơi sau được gọi là cố đô gồm: đất tổ Phong Chu \"Phong Chu (kinh đô)\"), cố đô Hoa Lư \"Hoa Lư (thành phố)\"), cố đô Huế; với sự nhìn nhận và đánh giá lại về vương triều nhà Hồ, Thanh Hóa cũng được xem là một cố đô của Việt Nam. Cố đô Hoa Lư \"Hoa Lư (thành phố)\") và cố đô Huế là 2 tên gọi thông dụng, thường thấy nhất. [...] Hiện nay Việt Nam có 5 tỉnh, thành được gọi là các \"vùng kinh đô\" gồm: Hà Nội, Phú Thọ, Ninh Bình, Thanh Hóa và Thừa Thiên – Huế. 5 vùng kinh đô này được ngành văn hóa cho phép tổ chức và tham gia nhiều sự kiện lớn như: cuộc thi người đẹp các vùng kinh đô, hiệp hội văn học nghệ thuật các vùng kinh đô, triển lãm ảnh ngũ đại cố đô của Việt Nam, Hành trình di sản thế giới... Năm du lịch Quốc gia 2015 diễn ra ở Thanh Hóa và các tỉnh, thành phố có Kinh đô cổ và di sản văn hoá thế giới có chuyên đề",
+                "score": 0.9404462
+              },
+              {
+                "title": "Thủ đô Việt Nam – Wikipedia tiếng Việt",
+                "url": "https://vi.wikipedia.org/wiki/Th%E1%BB%A7_%C4%91%C3%B4_Vi%E1%BB%87t_Nam",
+                "source": "vi.wikipedia.org",
+                "summary": "Wikipedia\nBách khoa toàn thư mở\n\n## Nội dung\n\n# Thủ đô Việt Nam\n\nThủ đô Việt Nam hiện nay là thành phố Hà Nội. Sau đây là danh sách các kinh đô/thủ đô – hiểu theo nghĩa rộng – là các trung tâm chính trị của chính thể nhà nước trong lịch sử Việt Nam, và cả của các vương quốc cổ/cựu quốc gia từng tồn tại trên lãnh thổ Việt Nam ngày nay.\n\n## Kinh đô và Thủ đô của Việt Nam qua các thời kỳ [...] Cố đô là cách gọi tôn vinh những nơi từng là thủ đô chính thống trong lịch sử Việt Nam. Hiện ở Việt Nam có các nơi sau được gọi là cố đô gồm: đất tổ Phong Châu \"Phong Châu (kinh đô)\"), cố đô Hoa Lư \"Hoa Lư (thành phố)\"), cố đô Huế; với sự nhìn nhận và đánh giá lại về vương triều nhà Hồ, Thanh Hóa cũng được xem là một cố đô của Việt Nam. Cố đô Hoa Lư \"Hoa Lư (thành phố)\") và cố đô Huế là 2 tên gọi thông dụng, thường thấy nhất. [...] Hiện nay Việt Nam có 5 tỉnh, thành được gọi là các \"vùng kinh đô\" gồm: Hà Nội, Phú Thọ, Ninh Bình, Thanh Hóa và Thừa Thiên – Huế. 5 vùng kinh đô này được ngành văn hóa cho phép tổ chức và tham gia nhiều sự kiện lớn như: cuộc thi người đẹp các vùng kinh đô, hiệp hội văn học nghệ thuật các vùng kinh đô, triển lãm ảnh ngũ đại cố đô của Việt Nam, Hành trình di sản thế giới... Năm du lịch Quốc gia 2015 diễn ra ở Thanh Hóa và các tỉnh, thành phố có Kinh đô cổ và di sản văn hoá thế giới có chuyên đề",
+                "score": 0.9348309
+              },
+              {
+                "title": "Danh nhân lịch sử Việt Nam Trần Thủ Độ",
+                "url": "https://nguoinoitieng.tv/nghe-nghiep/danh-nhan-lich-su-viet-nam/tran-thu-do/baia",
+                "source": "nguoinoitieng.tv",
+                "summary": "# Danh nhn lịch sử Việt Nam Trần Thủ Độ. Người nổi tiếng> Danh nhn lịch sử Việt Nam> Trần Thủ Độ. * Tiểu sử Danh nhn lịch sử Việt Nam Trần Thủ Độ. * Ghi chú về Danh nhn lịch sử Việt Nam Trần Thủ Độ. ## Tiểu sử Danh nhn lịch sử Việt Nam Trần Thủ Độ. **Danh nhn lịch sử Việt Nam Trần Thủ Độ là ai?**. Trần Thủ Độ là là có công lớn trong việc sáng lập nên triều đại nhà Trần, được vua Trần phong làm Quốc thượng phụ rồi Thái sư. Việc đó khiến Trần Liễu thù hận cất qun nổi loạn và Trần Thái Tông toan bỏ đi tu, Nhưng trước sức ép cứng rắn của Trần Thủ Độ, Thái Tông đành quay trở lại ngôi vua, còn Trần Liễu sau khi thất bại cũng phải hàng phục và được phong làm An Sinh vương ở Kinh Môn. **Bạn gái/ vợ/ người yêu Danh nhn lịch sử Việt Nam Trần Thủ Độ là ai?**. ## Chiều cao cn nặng Danh nhn lịch sử Việt Nam Trần Thủ Độ. **Danh nhn lịch sử Việt Nam Trần Thủ Độ cao bao nhiêu, nặng bao nhiêu?**. **Danh nhn lịch sử Việt Nam Trần Thủ Độ sinh năm bao nhiêu, bao nhiêu tuổi?**. **Danh nhn lịch sử Việt Nam Trần Thủ Độ sinh ở đu, con giáp/ cung hoàng đạo gì?**. Trần Thủ Độ sinh ra tại Tỉnh Thái Bình, nước Việt Nam. Ông sinh thuộc cung (chưa rõ), cầm tinh con (giáp) hổ (Giáp Dần 1194). Trần Thủ Độ xếp hạng nổi tiếng thứ 92153 trên thế giới và thứ 49 trong danh sách Danh nhn lịch sử Việt Nam nổi tiếng. ## Ghi chú về Danh nhn lịch sử Việt Nam Trần Thủ Độ. Các thông tin về Danh nhn lịch sử Việt Nam Trần Thủ Độ có thể chưa đủ hoặc chưa chính xác và chỉ mang tính tham khảo, nếu bạn thấy thông tin là chưa chính xác, vui lòng liên hệ với chúng tôi qua email: @gmail.com. ### Danh nhn lịch sử Việt Nam nổi tiếng ### Sinh năm 1194 ### Sinh tuổi Dần ### Sinh tuổi Giáp Dần ### Cung Song Ngư.",
+                "score": 0.27285978
+              },
+              {
+                "title": "Thủ tướng Ấn Độ Narendra Modi thăm Việt Nam",
+                "url": "https://baochinhphu.vn/thu-tuong-an-do-narendra-modi-tham-viet-nam-102208305.htm",
+                "source": "baochinhphu.vn",
+                "summary": "Title: Thủ tướng Ấn Độ Narendra Modi thăm Việt Nam\nchính phủ nước cộng hòa xã hội chủ nghĩa việt nam. ## (Chinhphu.vn) - Nhận lời mời của Thủ tướng Chính phủ Nguyễn Xun Phúc, Thủ tướng nước Cộng hòa Ấn Độ Narendra Modi sẽ thăm chính thức Việt Nam từ ngày 2 đến ngày 3/9/2016. | Thủ tướng nước Cộng hòa Ấn Độ Narendra Modi sẽ thăm chính thức Việt Nam từ ngày 2 đến ngày 3/9/2016. Tại buổi họp báo do Đại sứ quán Ấn Độ tại Việt Nam tổ chức ngày 30/8, Đại sứ đặc mệnh toàn quyền nước Cộng hòa Ấn Độ tại Việt Nam Parvathaneni Harish cho biết, đy là chuyến thăm chính thức song phương đầu tiên của Thủ tướng Ấn Độ tới Việt Nam trong 15 năm qua. Trong khuôn khổ chuyến thăm, Thủ tướng Narendra Modi sẽ tọa đàm với Thủ tướng Nguyễn Xun Phúc và chào xã giao Tổng Bí thư Nguyễn Phú Trọng, Chủ tịch Quốc hội Nguyễn Thị Kim Ngn. Thủ tướng Narendra Modi cũng sẽ tới thăm chùa Quán Sứ theo lời mời của Giáo hội Phật giáo Việt Nam. Cũng theo Đại sứ Parvathaneni Harish, phía Ấn Độ hy vọng trong chuyến thăm này sẽ có nhiều thỏa thuận hợp tác song phương được ký kết với Việt Nam trên nhiều lĩnh vực truyền thống của hai nước như: Khoa học công nghệ, công nghệ thông tin, kinh tế, văn hóa, quốc phòng, an ninh. Trong thời gian gần đy, mối quan hệ  Đối tác chiến lược Việt Nam-Ấn Độ đã có những bước phát triển mạnh mẽ trong các lĩnh vực từ chính trị đến kinh tế, quốc phòng-an ninh, khoa học, kỹ thuật, văn hóa, du lịch và giao lưu nhn dn. Lãnh đạo hai nước cũng tái khẳng định cam kết phát triển toàn diện mối quan hệ Đối tác chiến lược này; cho rằng quan hệ đối tác mạnh mẽ giữa Ấn Độ và Việt Nam sẽ mang lại hòa bình, thịnh vượng và ổn định cho nhn dn hai nước cũng như trong khu vực. © BÁO ĐIỆN TỬ CỦA CHÍNH PHỦ NƯỚC CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM.",
+                "score": 0.11815108
+              },
+              {
+                "title": "Thủ Công Mỹ Nghệ | Đồ Thủ Công Mỹ Nghệ TMH Việt Nam - Công Ty TNHH TMH Việt Nam",
+                "url": "https://www.nhungtrangvang.com/cty/1187992947/thu-cong-my-nghe-do-thu-cong-my-nghe-tmh-viet-nam-cong-ty-tnhh-tmh-viet-nam-ypclss-121610.html",
+                "source": "nhungtrangvang.com",
+                "summary": "Title: Thủ Công Mỹ Nghệ | Đồ Thủ Công Mỹ Nghệ TMH Việt Nam - Công Ty TNHH TMH Việt Nam\n# Đồ Thủ Công Mỹ Nghệ TMH Việt Nam - Công Ty TNHH TMH Việt Nam. Những Trang Vàng - Nhà Tài Trợ NHÀ TÀI TRỢ  Được xác minh. Những Trang Vàng - Đồ Thủ Công Mỹ Nghệ TMH Việt Nam - Công Ty TNHH TMH Việt Nam. Những Trang Vàng - Nhà Tài Trợ NHÀ TÀI TRỢ  Được xác minh. Nhà sản xuất, Gia công OEM/ODM. Giỏ đựng đồ giặt lục bình. Sọt my tròn đựng quần áo bẩn - Đồ Thủ Công Mỹ Nghệ TMH Việt Nam - Công Ty TNHH TMH Việt Nam. Sọt my tròn đựng quần áo bẩn. Hộp đựng giấy ăn bằng tre - Đồ Thủ Công Mỹ Nghệ TMH Việt Nam - Công Ty TNHH TMH Việt Nam. Hộp đựng giấy ăn bằng tre. Tấm cói trang trí tường - Đồ Thủ Công Mỹ Nghệ TMH Việt Nam - Công Ty TNHH TMH Việt Nam. Tấm cói trang trí tường. Giỏ cói đựng cy cảnh - Đồ Thủ Công Mỹ Nghệ TMH Việt Nam - Công Ty TNHH TMH Việt Nam. Giỏ cói đựng cy cảnh. Giỏ lục bình - Đồ Thủ Công Mỹ Nghệ TMH Việt Nam - Công Ty TNHH TMH Việt Nam. Khay lục bình oval - Đồ Thủ Công Mỹ Nghệ TMH Việt Nam - Công Ty TNHH TMH Việt Nam. Sản phẩm móc & dệt kim. Khay trang trí lục bình - Đồ Thủ Công Mỹ Nghệ TMH Việt Nam - Công Ty TNHH TMH Việt Nam Giỏ móc sợi PP vuông màu xanh - Đồ Thủ Công Mỹ Nghệ TMH Việt Nam - Công Ty TNHH TMH Việt Nam. Giỏ móc sợi PP vuông màu xanh. Thảm xơ dừa trang trí - Đồ Thủ Công Mỹ Nghệ TMH Việt Nam - Công Ty TNHH TMH Việt Nam. Thảm xơ dừa trang trí. Thảm xơ dừa trang trí - Đồ Thủ Công Mỹ Nghệ TMH Việt Nam - Công Ty TNHH TMH Việt Nam. Thảm xơ dừa trang trí. Thảm xơ dừa trang trí - Đồ Thủ Công Mỹ Nghệ TMH Việt Nam - Công Ty TNHH TMH Việt Nam. Thảm xơ dừa trang trí.",
+                "score": 0.05758342
+              }
+            ]
+          }
+        }
+      ],
+      "ended_at": "2026-07-29T10:47:58"
+    }
+  ]
+}
